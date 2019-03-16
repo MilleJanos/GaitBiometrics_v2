@@ -3,118 +3,142 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/green_background_50"
+    android:background="@color/shadow_lighter_color_5"
     tools:context=".controller.fragments.FirebaseAuthenticationFragment">
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:layout_gravity="center">
+        android:orientation="vertical"
+        android:layout_margin="14dp"
+        android:background="@color/colorWhite">
 
-        <LinearLayout
-            android:id="@+id/linearlayout_container"
+        <Button
+            android:id="@+id/button_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_arrow_back_black_24dp"/>
+
+
+
+
+
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="18dp"
-            android:layout_marginEnd="50dp"
-            android:layout_marginBottom="18dp"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:padding="18dp">
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_gravity="center">
 
-            <TextView
-                android:id="@+id/text_title"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:id="@+id/linearlayout_container"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginBottom="8dp"
-                android:fontFamily="@font/aldrich"
-                android:text="title"
-                android:textColor="@color/colorBlack"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                tools:ignore="HardcodedText" />
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="18dp">
 
-            <EditText
-                android:id="@+id/edit_text_0"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:background="@drawable/background_edittext"
-                android:ems="10"
-                android:fontFamily="@font/aldrich"
-                android:hint="edit_text_0"
-                tools:ignore="HardcodedText" />
 
-            <EditText
-                android:id="@+id/edit_text_1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:background="@drawable/background_edittext"
-                android:ems="10"
-                android:fontFamily="@font/aldrich"
-                android:hint="edit_text_1"
-                tools:ignore="HardcodedText" />
 
-            <EditText
-                android:id="@+id/edit_text_2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:background="@drawable/background_edittext"
-                android:ems="10"
-                android:fontFamily="@font/aldrich"
-                android:hint="edit_text_2"
-                tools:ignore="HardcodedText" />
 
-            <Button
-                android:id="@+id/button_main"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:background="@drawable/button_selector"
-                android:fontFamily="@font/aldrich"
-                android:shadowRadius="@android:integer/config_longAnimTime"
-                android:text="button"
-                android:textAlignment="center"
-                android:textAllCaps="false"
-                android:textColor="@color/colorBlack"
-                android:textStyle="bold"
-                tools:ignore="HardcodedText" />
+                <TextView
+                    android:id="@+id/text_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/aldrich"
+                    android:text="title"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
 
-            <TextView
-                android:id="@+id/text_button_0"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="5dp"
-                android:text="text_button_0"
-                tools:ignore="HardcodedText" />
+                <EditText
+                    android:id="@+id/edit_text_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/background_edittext"
+                    android:ems="10"
+                    android:fontFamily="@font/aldrich"
+                    android:hint="edit_text_0"
+                    tools:ignore="HardcodedText" />
 
-            <TextView
-                android:id="@+id/text_button_1"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="5dp"
-                android:text="text_button_1"
-                tools:ignore="HardcodedText" />
+                <EditText
+                    android:id="@+id/edit_text_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/background_edittext"
+                    android:ems="10"
+                    android:fontFamily="@font/aldrich"
+                    android:hint="edit_text_1"
+                    tools:ignore="HardcodedText" />
 
-            <TextView
-                android:id="@+id/text_button_2"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="5dp"
-                android:text="text_button_2"
-                tools:ignore="HardcodedText" />
+                <EditText
+                    android:id="@+id/edit_text_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/background_edittext"
+                    android:ems="10"
+                    android:fontFamily="@font/aldrich"
+                    android:hint="edit_text_2"
+                    tools:ignore="HardcodedText" />
 
-        </LinearLayout>
+                <Button
+                    android:id="@+id/button_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/button_selector"
+                    android:fontFamily="@font/aldrich"
+                    android:shadowRadius="@android:integer/config_longAnimTime"
+                    android:text="button"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
 
-    </ScrollView>
+                <Button
+                    android:id="@+id/button_additional_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:background="@color/transparent"
+                    android:text="button_additional_0"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/button_additional_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:background="@color/transparent"
+                    android:text="button_additional_1"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/button_additional_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:background="@color/transparent"
+                    android:text="button_additional_2"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
 
 </FrameLayout>
